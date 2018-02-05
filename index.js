@@ -20,6 +20,8 @@ const writeI2cBlockPromise = (addr, cmd, length, buffer) => {
 const set_voltage = (value, persist = false) => {
     const command = persist ? CMD_WRITEDACEEPROM : CMD_WRITEDAC;
 
+    value = value > 4095 ? 4095 : value;
+
     return writeI2cBlockPromise(
         DEFAULT_DEVICE_ADDRESS,
         command,
