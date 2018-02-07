@@ -7,7 +7,7 @@ MCP4725 Datasheet: https://www.sparkfun.com/datasheets/BreakoutBoards/MCP4725.pd
 
 ## Example
 ``` javascript
-const mcp4725 = require('./index.js');
+const mcp4725 = require('i2c-mcp4725');
 
 (async () => {
     // sets the voltage to 50% of VDD
