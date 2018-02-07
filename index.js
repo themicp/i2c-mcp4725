@@ -17,7 +17,7 @@ const writeI2cBlockPromise = (addr, cmd, length, buffer) => {
     })
 }
 
-const set_voltage = (value, persist = false) => {
+const setVoltage = (value, persist = false) => {
     const command = persist ? CMD_WRITEDACEEPROM : CMD_WRITEDAC;
 
     value = value > 4095 ? 4095 : value;
@@ -30,4 +30,4 @@ const set_voltage = (value, persist = false) => {
     );
 }
 
-module.exports = {set_voltage};
+module.exports = {setVoltage};
