@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Library to communicate with MCP4725 over I2C",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "name": "Themis Papameletiou",
+    "email": "themicp@gmail.com"
   },
-  "author": "themicp",
   "dependencies": {
     "i2c-bus": "^1.2.5"
   }
